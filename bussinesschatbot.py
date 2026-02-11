@@ -1,6 +1,6 @@
 
 import os
-from dotenv import load_dotenv
+
 import streamlit as st
 from groq import Groq
 
@@ -46,4 +46,5 @@ if st.button("Generate Growth Strategy"):
 
     else:
         st.warning("Please fill all fields.")
+
 
