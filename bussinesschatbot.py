@@ -11,6 +11,7 @@ st.set_page_config(page_title="AI SME Growth Assistant", page_icon="🚀")
 
 st.title("🚀 AI SME Growth Assistant")
 st.write("Get AI-powered business growth strategies instantly.")
+st.write("This App is developed by Prabhaharn.M")
 
 # User input
 business_name = st.text_input("Enter Business Name")
@@ -46,5 +47,6 @@ if st.button("Generate Growth Strategy"):
 
     else:
         st.warning("Please fill all fields.")
+
 
 
