@@ -19,7 +19,7 @@ st.markdown("""
 
 /* Background */
 .stApp {
-    background: linear-gradient(135deg, #1E3A8A, #3B82F6);
+    background:#F5F7FA;
 }
 
 /* Title */
@@ -89,7 +89,7 @@ class="banner-img">
 """, unsafe_allow_html=True)
 
 # ---------------- FORM CARD ----------------
-st.markdown("<div class='form-card'>", unsafe_allow_html=True)
+
 
 st.markdown("### Enter Business Details")
 
@@ -138,9 +138,10 @@ if generate:
     else:
         st.warning("Please fill all fields.")
 st.markdown(
-    "<p style='text-align:center; font-size:14px;'>Built by Prabaharan M | AI Programming Trainee</p>",
+    "<p style='text-align:center; font-size:14px; margin-top:200px;'>Built by Prabaharan M | AI Programming Trainee</p>",
     unsafe_allow_html=True
 )
+
 
 
 
