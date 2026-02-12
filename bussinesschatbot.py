@@ -22,9 +22,12 @@ st.markdown("""
 
     .main-card {
         background-color: #FFFFFF;
-        padding: 40px;
-        border-radius: 15px;
-        box-shadow: 0px 8px 25px rgba(0,0,0,0.15);
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 6px 18px rgba(0,0,0,0.1);
+        width:60%;
+        margin: auto;
+        margin-bottom: 30px;
     }
 
     h1 {
@@ -52,18 +55,15 @@ st.markdown("""
         background-color: #E0E7FF;
         color: #1E3A8A;
     }
-    .main-card {
-    background-color: white;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
-}
+    
 
 .card-image {
-    width: 70%;
-    display:block;
-    margin: auto;
- 
+    width: 100%;
+    height: 250px;
+    object-fit:cover;
+    border-radius: 15px;
+
+
 }
 
 
@@ -128,6 +128,7 @@ st.markdown(
     "<p style='text-align:center; font-size:14px;'>Built by Prabaharan M | AI Programming Trainee</p>",
     unsafe_allow_html=True
 )
+
 
 
 
