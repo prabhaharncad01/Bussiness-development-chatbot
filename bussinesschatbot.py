@@ -7,24 +7,21 @@ from groq import Groq
 
 #page config
 st.set_page_config(
-    page_title="AI SME Growth Assistant",
+    page_title="AI SME Business Growth Assistant",
     page_icon="🤖",
     layout="centered"
 )
 
 st.markdown("""
     <h1 style='text-align: center; color: #274DF5;'>
-        🤖 AI SME Growth Assistant
+        🤖 AI SME Business Growth Assistant
     </h1>
-    <p style='text-align: center; font-size:18px; color: #79E031'>
+    <p style='text-align: center; font-size:18px; color: #3431E0'>
         Generate AI-powered business growth strategies in seconds
      
     </p>
-    <p style='text-align: center; font-size:18px;color: #79E031'>
-        This App is developed by M.prabhaharn😎
 
-    </p>
-    
+  
 """, unsafe_allow_html=True)
 
 st.divider()
@@ -71,7 +68,7 @@ if st.button("Generate Growth Strategy"):
 st.markdown("""
     <style>
     .stApp {
-        background-color: #f5f7fa;
+         background: linear-gradient(135deg, #1E3A8A, #3B82F6);
     }
     </style>
 """, unsafe_allow_html=True)
@@ -83,6 +80,7 @@ st.markdown(
     "<p style='text-align:center; font-size:14px;'>Built by Prabaharan M | AI Programming Trainee</p>",
     unsafe_allow_html=True
 )
+
 
 
 
