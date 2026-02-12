@@ -53,7 +53,7 @@ st.markdown("""
 
 .banner-container{
 width: 100%;
-margin-bottom: 20%;
+margin-bottom: 30%;
 }
 
 .banner-image{
@@ -80,7 +80,7 @@ st.markdown("<p class='subtext'>Generate AI-powered business growth strategies i
 st.markdown("""
     <div class='banner-container'>
       
-            <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg" 'class = banner-image'>
+            <img src="https://images.pexels.com/photos/7947753/pexels-photo-7947753.jpeg" 'class = banner-image'>
 
     <div>
       
@@ -127,6 +127,7 @@ st.markdown(
     "<p style='text-align:center; font-size:14px;'>Built by Prabaharan M | AI Programming Trainee</p>",
     unsafe_allow_html=True
 )
+
 
 
 
