@@ -20,16 +20,8 @@ st.markdown("""
         background: linear-gradient(135deg, #1E3A8A, #3B82F6);
     }
 
-    .main-card {
-        background-color: #FFFFFF;
-        padding: 20px;
-        border-radius: 20px;
-        box-shadow: 0px 6px 18px rgba(0,0,0,0.1);
-        width:80%;
-       
-        margin: auto;
-        margin-bottom: 30px;
-    }
+   
+
 
     h1 {
         color: #FFFFFF;
@@ -66,8 +58,8 @@ margin-bottom: 20%;
 
 .banner-image{
 width:100%;
-height: 200px;
-object-fit: cover;
+height: 280px;
+
 border-radius:0px;
 }
 
@@ -135,6 +127,7 @@ st.markdown(
     "<p style='text-align:center; font-size:14px;'>Built by Prabaharan M | AI Programming Trainee</p>",
     unsafe_allow_html=True
 )
+
 
 
 
