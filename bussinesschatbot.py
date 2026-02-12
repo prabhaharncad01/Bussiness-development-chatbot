@@ -13,13 +13,18 @@ st.set_page_config(
 )
 
 st.markdown("""
-    <h1 style='text-align: center; color: #4CAF50;'>
+    <h1 style='text-align: center; color: #274DF5;'>
         🤖 AI SME Growth Assistant
     </h1>
-    <p style='text-align: center; font-size:18px;'>
+    <p style='text-align: center; font-size:18px; color: #79E031'>
         Generate AI-powered business growth strategies in seconds
-        This App is developed by Prabhaharn.M 😎
+     
     </p>
+    <p style='text-align: center; font-size:18px;color: #79E031'>
+        This App is developed by M.prabhaharn😎
+
+    </p>
+    
 """, unsafe_allow_html=True)
 
 st.divider()
@@ -78,6 +83,7 @@ st.markdown(
     "<p style='text-align:center; font-size:14px;'>Built by Prabaharan M | AI Programming Trainee</p>",
     unsafe_allow_html=True
 )
+
 
 
 
