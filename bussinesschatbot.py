@@ -102,12 +102,11 @@ if st.button("Generate Growth Strategy"):
 
 st.markdown("</div>", unsafe_allow_html=True)
 
-
-st.divider()
 st.markdown(
     "<p style='text-align:center; font-size:14px;'>Built by Prabaharan M | AI Programming Trainee</p>",
     unsafe_allow_html=True
 )
+
 
 
 
