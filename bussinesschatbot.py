@@ -58,13 +58,17 @@ st.markdown("""
     }
     
 
-.card-image {
-    width: 100%;
-    height: 100px;
-    object-fit:cover;
-    border-radius: 15px;
 
+.banner-container{
+width: 100%;
+margin-bottom: 20%;
+}
 
+.banner-image{
+width:100%;
+height: 200px;
+object-fit: cover;
+border-radius:0px;
 }
 
 
@@ -82,10 +86,10 @@ st.markdown("<p class='subtext'>Generate AI-powered business growth strategies i
 
 # ---------------- CARD START ----------------
 st.markdown("""
-    <div class='main-card'>
-        <div style='text-align:center;'>
-            <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg" 'class = card-image'>
-        </div>
+    <div class='banner-container'>
+      
+            <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg" 'class = banner-image'>
+      
 """, unsafe_allow_html=True)
 
 business_name = st.text_input("🏢 Enter Business Name")
@@ -129,6 +133,7 @@ st.markdown(
     "<p style='text-align:center; font-size:14px;'>Built by Prabaharan M | AI Programming Trainee</p>",
     unsafe_allow_html=True
 )
+
 
 
 
