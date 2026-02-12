@@ -63,7 +63,10 @@ st.markdown("<p class='subtext'>Generate AI-powered business growth strategies i
 
 
 # ---------------- CARD START ----------------
-st.markdown("<div class='main-card'>", unsafe_allow_html=True)
+st.markdown(" <div class='main-card'>
+        <div style='text-align:center;'>
+            <img src="https://images.pexels.com/photos/6801636/pexels-photo-6801636.jpeg" width="120">
+        </div>", unsafe_allow_html=True)
 
 business_name = st.text_input("🏢 Enter Business Name")
 location = st.text_input("📍 Enter Location")
@@ -106,6 +109,7 @@ st.markdown(
     "<p style='text-align:center; font-size:14px;'>Built by Prabaharan M | AI Programming Trainee</p>",
     unsafe_allow_html=True
 )
+
 
 
 
