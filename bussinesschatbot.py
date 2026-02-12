@@ -25,10 +25,10 @@ st.markdown("""
         padding: 20px;
         border-radius: 20px;
         box-shadow: 0px 6px 18px rgba(0,0,0,0.1);
-        width:100%;
-        height:50%;
+        width:80%;
+       
         margin: auto;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
 
     h1 {
@@ -129,6 +129,7 @@ st.markdown(
     "<p style='text-align:center; font-size:14px;'>Built by Prabaharan M | AI Programming Trainee</p>",
     unsafe_allow_html=True
 )
+
 
 
 
