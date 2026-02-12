@@ -54,11 +54,12 @@ st.markdown("""
 .banner-container{
 width: 100%;
 margin-bottom: 30%;
+margin-top: 10%;
 }
 
 .banner-image{
 width:100%;
-height: 280px;
+height: 300px;
 
 border-radius:0px;
 }
@@ -127,6 +128,7 @@ st.markdown(
     "<p style='text-align:center; font-size:14px;'>Built by Prabaharan M | AI Programming Trainee</p>",
     unsafe_allow_html=True
 )
+
 
 
 
