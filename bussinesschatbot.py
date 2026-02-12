@@ -103,22 +103,12 @@ if st.button("Generate Growth Strategy"):
 st.markdown("</div>", unsafe_allow_html=True)
 
 
-
-st.markdown("""
-    <style>
-    .stApp {
-         background: linear-gradient(135deg, #1E3A8A, #3B82F6);
-    }
-    </style>
-""", unsafe_allow_html=True)
-
-
-
 st.divider()
 st.markdown(
     "<p style='text-align:center; font-size:14px;'>Built by Prabaharan M | AI Programming Trainee</p>",
     unsafe_allow_html=True
 )
+
 
 
 
