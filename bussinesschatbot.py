@@ -20,8 +20,7 @@ st.markdown("""
         background: linear-gradient(135deg, #1E3A8A, #3B82F6);
     }
 
-   
-
+  
 
     h1 {
         color: #FFFFFF;
@@ -51,19 +50,6 @@ st.markdown("""
     
 
 
-.banner-container{
-width: 100%;
-margin-bottom: 30%;
-margin-top: 10%;
-}
-
-.banner-image{
-width:100%;
-height: 300px;
-
-border-radius:0px;
-}
-
 
     </style>
 """, unsafe_allow_html=True)
@@ -74,18 +60,6 @@ border-radius:0px;
 st.markdown("<h1>🚀 AI SME Growth Assistant</h1>", unsafe_allow_html=True)
 st.markdown("<p class='subtext'>Generate AI-powered business growth strategies instantly</p>", unsafe_allow_html=True)
 
-
-
-
-# ---------------- CARD START ----------------
-st.markdown("""
-    <div class='banner-container'>
-      
-            <img src="https://images.pexels.com/photos/7947753/pexels-photo-7947753.jpeg" 'class = banner-image'>
-
-    <div>
-      
-""", unsafe_allow_html=True)
 
 business_name = st.text_input("🏢 Enter Business Name")
 location = st.text_input("📍 Enter Location")
@@ -128,6 +102,7 @@ st.markdown(
     "<p style='text-align:center; font-size:14px;'>Built by Prabaharan M | AI Programming Trainee</p>",
     unsafe_allow_html=True
 )
+
 
 
 
