@@ -25,14 +25,14 @@ st.markdown("""
 /* Title */
 .main-title {
     text-align: center;
-    color: white;
+    color: #3431E0;
     font-size: 42px;
     font-weight: bold;
 }
 
 .sub-title {
     text-align: center;
-    color: #E0E7FF;
+    color: #27277D;
     font-size: 18px;
     margin-bottom: 30px;
 }
@@ -141,6 +141,7 @@ st.markdown(
     "<p style='text-align:center; font-size:14px; margin-top:200px;'>Built by Prabaharan M | AI Programming Trainee</p>",
     unsafe_allow_html=True
 )
+
 
 
 
