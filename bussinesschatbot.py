@@ -11,6 +11,8 @@ st.set_page_config(
     page_icon="🤖",
     layout="centered"
 )
+
+
 # ---------------- CUSTOM CSS ----------------
 st.markdown("""
     <style>
@@ -50,6 +52,19 @@ st.markdown("""
         background-color: #E0E7FF;
         color: #1E3A8A;
     }
+    .main-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+}
+
+.card-image {
+    width: 100%;
+    border-radius: 15px;
+}
+
+
     </style>
 """, unsafe_allow_html=True)
 
@@ -66,7 +81,7 @@ st.markdown("<p class='subtext'>Generate AI-powered business growth strategies i
 st.markdown("""
     <div class='main-card'>
         <div style='text-align:center;'>
-            <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg" width="120">
+            <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg" 'class = card-image'>
         </div>
 """, unsafe_allow_html=True)
 
@@ -111,6 +126,7 @@ st.markdown(
     "<p style='text-align:center; font-size:14px;'>Built by Prabaharan M | AI Programming Trainee</p>",
     unsafe_allow_html=True
 )
+
 
 
 
