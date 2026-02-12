@@ -89,6 +89,8 @@ st.markdown("""
     <div class='banner-container'>
       
             <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg" 'class = banner-image'>
+
+    <div>
       
 """, unsafe_allow_html=True)
 
@@ -133,6 +135,7 @@ st.markdown(
     "<p style='text-align:center; font-size:14px;'>Built by Prabaharan M | AI Programming Trainee</p>",
     unsafe_allow_html=True
 )
+
 
 
 
