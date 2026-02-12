@@ -5,13 +5,25 @@ import streamlit as st
 from groq import Groq
 
 
+#page config
+st.set_page_config(
+    page_title="AI SME Growth Assistant",
+    page_icon="🤖",
+    layout="centered"
+)
 
-# Page config
-st.set_page_config(page_title="AI SME Growth Assistant", page_icon="🚀")
+st.markdown("""
+    <h1 style='text-align: center; color: #4CAF50;'>
+        🤖 AI SME Growth Assistant
+    </h1>
+    <p style='text-align: center; font-size:18px;'>
+        Generate AI-powered business growth strategies in seconds
+        This App is developed by Prabhaharn.M 😎
+    </p>
+""", unsafe_allow_html=True)
 
-st.title("🚀 AI SME Growth Assistant")
-st.write("Get AI-powered business growth strategies instantly.")
-st.write("This App is developed by Prabhaharn.M")
+st.divider()
+
 
 # User input
 business_name = st.text_input("Enter Business Name")
@@ -43,10 +55,31 @@ if st.button("Generate Growth Strategy"):
             result = response.choices[0].message.content
 
         st.success("Strategy Generated Successfully!")
+        st.balloons()
         st.write(result)
 
     else:
         st.warning("Please fill all fields.")
+
+
+
+st.markdown("""
+    <style>
+    .stApp {
+        background-color: #f5f7fa;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+
+
+st.divider()
+st.markdown(
+    "<p style='text-align:center; font-size:14px;'>Built by Prabaharan M | AI Programming Trainee</p>",
+    unsafe_allow_html=True
+)
+
+
 
 
 
