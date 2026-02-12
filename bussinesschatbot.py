@@ -53,25 +53,21 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.markdown("""
-    <h1 style='text-align: center; color: #FFFFFF;'>
-        🤖 AI SME Business Growth Assistant
-    </h1>
-    <p style='text-align: center; font-size:18px; color: #1F2937'>
-        Generate AI-powered business growth strategies in seconds
-     
-    </p>
-
-  
-""", unsafe_allow_html=True)
-
-st.divider()
 
 
-# User input
-business_name = st.text_input("Enter Business Name")
-location = st.text_input("Enter Location")
-industry = st.text_input("Enter Industry")
+# ---------------- HEADER ----------------
+st.markdown("<h1>🚀 AI SME Growth Assistant</h1>", unsafe_allow_html=True)
+st.markdown("<p class='subtext'>Generate AI-powered business growth strategies instantly</p>", unsafe_allow_html=True)
+
+
+
+
+# ---------------- CARD START ----------------
+st.markdown("<div class='main-card'>", unsafe_allow_html=True)
+
+business_name = st.text_input("🏢 Enter Business Name")
+location = st.text_input("📍 Enter Location")
+industry = st.text_input("🏷️ Enter Industry")
 
 if st.button("Generate Growth Strategy"):
 
@@ -85,7 +81,7 @@ if st.button("Generate Growth Strategy"):
         Focus on customer acquisition, digital marketing, and revenue growth.
         """
 
-        with st.spinner("Generating strategy..."):
+        with st.spinner("🤖 Generating strategy..."):
 
             response = client.chat.completions.create(
                 model="llama-3.3-70b-versatile",
@@ -97,12 +93,14 @@ if st.button("Generate Growth Strategy"):
 
             result = response.choices[0].message.content
 
-        st.success("Strategy Generated Successfully!")
+        st.success("✅ Strategy Generated Successfully!")
         st.balloons()
         st.write(result)
 
     else:
-        st.warning("Please fill all fields.")
+        st.warning("⚠ Please fill all fields.")
+
+st.markdown("</div>", unsafe_allow_html=True)
 
 
 
@@ -121,6 +119,7 @@ st.markdown(
     "<p style='text-align:center; font-size:14px;'>Built by Prabaharan M | AI Programming Trainee</p>",
     unsafe_allow_html=True
 )
+
 
 
 
