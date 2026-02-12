@@ -25,7 +25,7 @@ st.markdown("""
         padding: 20px;
         border-radius: 20px;
         box-shadow: 0px 6px 18px rgba(0,0,0,0.1);
-        width:60%;
+        width:100%;
         margin: auto;
         margin-bottom: 30px;
     }
@@ -59,7 +59,7 @@ st.markdown("""
 
 .card-image {
     width: 100%;
-    height: 250px;
+    height: 100px;
     object-fit:cover;
     border-radius: 15px;
 
@@ -128,6 +128,7 @@ st.markdown(
     "<p style='text-align:center; font-size:14px;'>Built by Prabaharan M | AI Programming Trainee</p>",
     unsafe_allow_html=True
 )
+
 
 
 
