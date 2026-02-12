@@ -60,8 +60,10 @@ st.markdown("""
 }
 
 .card-image {
-    width: 100%;
-    border-radius: 15px;
+    width: 70%;
+    display:block;
+    margin: auto;
+ 
 }
 
 
@@ -126,6 +128,7 @@ st.markdown(
     "<p style='text-align:center; font-size:14px;'>Built by Prabaharan M | AI Programming Trainee</p>",
     unsafe_allow_html=True
 )
+
 
 
 
