@@ -12,6 +12,11 @@ st.set_page_config(
     layout="centered"
 )
 
+if "page" not in st.session_state:
+    st.session_state.page = "form"
+
+if "result" not in st.session_state:
+    st.session_state.result = ""
 
 # ---------------- CUSTOM CSS ----------------
 st.markdown("""
@@ -88,59 +93,71 @@ st.markdown("""
 class="banner-img">
 """, unsafe_allow_html=True)
 
-# ---------------- FORM CARD ----------------
+
+# ---------------- FORM PAGE ----------------
+if st.session_state.page == "form":
+
+    st.markdown("### Enter Business Details")
+
+    business_name = st.text_input("Business Name")
+    location = st.text_input("Location")
+    industry = st.text_input("Industry")
+
+    generate = st.button("Generate Growth Strategy")
+
+    if generate:
+
+        if business_name and location and industry:
+
+            client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+
+            prompt = f"""
+            Suggest detailed growth strategies for a {industry} business 
+            named {business_name} located in {location}.
+            Focus on:
+            - Customer acquisition
+            - Digital marketing
+            - Revenue growth
+            - Competitive positioning
+            """
+
+            with st.spinner("Generating strategy..."):
+
+                response = client.chat.completions.create(
+                    model="llama-3.3-70b-versatile",
+                    messages=[
+                        {"role": "system", "content": "You are an AI business growth expert."},
+                        {"role": "user", "content": prompt}
+                    ]
+                )
+
+            st.session_state.result = response.choices[0].message.content
+            st.session_state.page = "result"
+            st.rerun()
+
+        else:
+            st.warning("Please fill all fields.")
 
 
-st.markdown("### Enter Business Details")
+# ---------------- RESULT PAGE ----------------
+elif st.session_state.page == "result":
 
-business_name = st.text_input("Business Name")
-location = st.text_input("Location")
-industry = st.text_input("Industry")
+    st.success("Strategy Generated Successfully!")
+    st.balloons()
+    st.markdown("## 📊 Growth Strategy")
+    st.write(st.session_state.result)
 
-generate = st.button("Generate Growth Strategy")
+    if st.button("🔙 Back"):
+        st.session_state.page = "form"
+        st.rerun()
 
-st.markdown("</div>", unsafe_allow_html=True)
 
-# ---------------- AI LOGIC ----------------
-if generate:
 
-    if business_name and location and industry:
-
-        client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
-
-        prompt = f"""
-        Suggest detailed growth strategies for a {industry} business 
-        named {business_name} located in {location}.
-        Focus on:
-        - Customer acquisition
-        - Digital marketing
-        - Revenue growth
-        - Competitive positioning
-        """
-
-        with st.spinner("Generating strategy..."):
-
-            response = client.chat.completions.create(
-                model="llama-3.3-70b-versatile",
-                messages=[
-                    {"role": "system", "content": "You are an AI business growth expert."},
-                    {"role": "user", "content": prompt}
-                ]
-            )
-
-            result = response.choices[0].message.content
-
-        st.success("Strategy Generated Successfully!")
-        st.balloons()
-        st.markdown("## 📊 Growth Strategy")
-        st.write(result)
-
-    else:
-        st.warning("Please fill all fields.")
 st.markdown(
     "<p style='text-align:center; font-size:14px; margin-top:200px;'>Built by Prabaharan M | AI Programming Trainee</p>",
     unsafe_allow_html=True
 )
+
 
 
 
