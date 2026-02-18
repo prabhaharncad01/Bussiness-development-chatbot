@@ -154,9 +154,10 @@ elif st.session_state.page == "result":
 
 
 st.markdown(
-    "<p style='text-align:center; font-size:14px; margin-top:200px;'>Built by Prabaharan M | AI Programming Trainee</p>",
+    "<p style='text-align:center; font-size:14px; margin-top:200px;'>Built by Prabaharan M @ 2026| AI Programming Trainee</p>",
     unsafe_allow_html=True
 )
+
 
 
 
